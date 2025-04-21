@@ -1,0 +1,28 @@
+
+import java.util.Scanner;
+class ReverseSentense 
+{
+
+	static String reverseSetense(String str){
+	String[] arr = str.split(" ");
+	String result ="";
+	for( int i= arr.length-1; i>=0; i--){
+         result = result +arr[i]  + " ";      
+
+  
+	}
+
+	return result;
+
+	}
+	public static void main(String[] args) 
+	{
+
+		Scanner sc = new Scanner(System.in);
+
+		String str = sc.nextLine();
+
+		System.out.println( reverseSetense(str));
+		System.out.println("Hello World!");
+	}
+}
